@@ -1,0 +1,101 @@
+@import url("https://use.typekit.net/uly4rqu.css");
+
+:root {
+    --blue: #103152;
+    /* Logo, links */
+    --red: #E55757;
+    /* Header */
+    --sand: #E6DAB7;
+    /* Sekundære baggrundsfarve */
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blue);
+}
+
+section {
+    padding: 60px 80px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: effra, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 13vw;
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin: 0;
+    word-wrap: break-word;
+    color: var(--sand);
+}
+
+h2,
+h3 {
+    font-family: effra, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--sand);
+}
+
+p {
+    font-family: prestige-elite-std, monospace;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 1.5em 0;
+    color: var(--sand);
+}
+
+p span {
+    color: var(--red);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font-family: effra, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--red);
+    border: 2px solid var(--red);
+    padding: 10px 20px 5px 20px;
+    display: table;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: var(--red);
+    color: var(--blue);
+}
+
+.button_blue {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.button_blue:hover {
+    background-color: var(--blue);
+    color: var(--red);
+}
