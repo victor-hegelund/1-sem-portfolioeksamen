@@ -38,10 +38,6 @@ h2 {
     object-fit: cover;
 }
 
-#second_section {
-    background-color: var(--red);
-}
-
 #second_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

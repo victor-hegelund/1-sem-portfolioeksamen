@@ -73,6 +73,10 @@ section {
     padding: 60px 80px;
 }
 
+.red_section {
+    background-color: var(--red);
+}
+
 .content {
     margin: 0 auto;
     max-width: 1300px;

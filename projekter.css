@@ -1,0 +1,11 @@
+#second_section .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+#second_section .content .button,
+#second_section .content p {
+    margin: 0;
+}
