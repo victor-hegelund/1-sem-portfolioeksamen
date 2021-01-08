@@ -10,7 +10,12 @@ h2 {
 
 #first_section {
     padding: 0 80px;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+#first_section .button {
+    margin-bottom: 30px;
+
 }
 
 #first_section .content {

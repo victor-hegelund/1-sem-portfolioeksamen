@@ -1,0 +1,8 @@
+#first_section img {
+    width: 33%;
+    float: right;
+}
+
+#second_section {
+    background-color: var(--red);
+}
