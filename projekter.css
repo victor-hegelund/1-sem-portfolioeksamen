@@ -5,7 +5,10 @@
     grid-row-gap: 40px;
 }
 
-#second_section .content .button,
 #second_section .content p {
     margin: 0;
+}
+
+#second_section .content .button {
+    margin-top: 10px;
 }

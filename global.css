@@ -9,9 +9,24 @@
     /* Sekundære baggrundsfarve */
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--red);
+}
+
+::-moz-selection {
+    background: var(--red);
+}
+
 body {
     margin: 0;
-    box-sizing: border-box;
     background-color: var(--blue);
 }
 
@@ -48,7 +63,7 @@ header nav a::before {
     z-index: -1;
     top: 0;
     left: 0;
-    transform: translateY(calc(100% - 0px));
+    transform: translateY(-100%);
     width: 100%;
     height: 100%;
     background-color: var(--red);
@@ -84,6 +99,7 @@ section {
 
 img {
     width: 100%;
+    vertical-align: middle;
 }
 
 h1 {
@@ -125,12 +141,30 @@ p span {
     color: var(--blue);
 }
 
-.text-width-66 {
-    width: 66%;
+.blue::selection {
+    background: var(--blue);
+    color: var(--sand)
+}
+
+.blue::-moz-selection {
+    background: var(--blue);
+    color: var(--sand)
 }
 
 a {
     text-decoration: none;
+}
+
+a::selection {
+    color: var(--sand)
+}
+
+a::-moz-selection {
+    color: var(--sand)
+}
+
+.text-width-66 {
+    width: 66%;
 }
 
 .button {
@@ -150,6 +184,11 @@ a {
 .button:hover {
     background-color: var(--red);
     color: var(--blue);
+}
+
+.button_center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button_blue {
