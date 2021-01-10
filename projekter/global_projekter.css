@@ -73,3 +73,7 @@
     grid-column-gap: 40px;
     grid-row-gap: 40px;
 }
+
+.img_stack {
+    margin-top: 20px;
+}
