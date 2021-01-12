@@ -2,12 +2,14 @@
 
 :root {
     --blue: #103152;
-    /* Logo, links */
     --red: #E55757;
-    /* Header */
     --sand: #E6DAB7;
-    /* Sekundære baggrundsfarve */
 }
+
+p{
+    color: var(--sand);
+}
+
 
 * {
     box-sizing: border-box;
