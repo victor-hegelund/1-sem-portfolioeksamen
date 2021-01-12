@@ -144,6 +144,14 @@ ul {
     color: var(--sand);
 }
 
+ul {
+    margin-top: -24px;
+}
+
+.underrubrik {
+    text-transform: uppercase;
+}
+
 p span {
     color: var(--red);
 }
