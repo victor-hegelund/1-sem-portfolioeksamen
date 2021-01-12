@@ -135,7 +135,8 @@ h3 {
     margin-top: -50px;
 }
 
-p {
+p,
+ul {
     font-family: prestige-elite-std, monospace;
     font-weight: 700;
     font-style: normal;
