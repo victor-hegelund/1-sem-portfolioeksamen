@@ -6,7 +6,7 @@
     --sand: #E6DAB7;
 }
 
-p{
+p {
     color: var(--sand);
 }
 
@@ -144,10 +144,6 @@ ul {
     font-style: normal;
     margin: 0 0 1.5em 0;
     color: var(--sand);
-}
-
-ul {
-    margin-top: -24px;
 }
 
 .underrubrik {
