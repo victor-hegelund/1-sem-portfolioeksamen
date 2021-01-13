@@ -33,7 +33,7 @@ body {
 }
 
 header {
-    padding: 0 80px;
+    padding: 0 20px;
     max-width: 1300px;
 }
 
@@ -87,7 +87,11 @@ header nav .nav_active {
 }
 
 section {
-    padding: 60px 80px;
+    padding: 40px 20px;
+}
+
+#first_section {
+    padding-top: 60px;
 }
 
 .red_section {
@@ -132,11 +136,6 @@ h3 {
     color: var(--sand);
 }
 
-#anchor {
-    padding-top: 50px;
-    margin-top: -50px;
-}
-
 p,
 ul {
     font-family: prestige-elite-std, monospace;
@@ -144,10 +143,6 @@ ul {
     font-style: normal;
     margin: 0 0 1.5em 0;
     color: var(--sand);
-}
-
-.underrubrik {
-    text-transform: uppercase;
 }
 
 p span {
@@ -207,14 +202,6 @@ a {
     transition: transform .25s ease-out;
 }
 
-
-
-
-
-
-
-
-
 a::selection {
     color: var(--blue)
 }
@@ -224,7 +211,7 @@ a::-moz-selection {
 }
 
 .text-width-66 {
-    width: 66%;
+    width: 100%;
 }
 
 .button {
@@ -239,11 +226,40 @@ a::-moz-selection {
     padding: 10px 20px 5px 20px;
     display: table;
     margin-top: 30px;
+
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding-bottom: 1.5px;
+    overflow: hidden;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
 }
 
 .button:hover {
-    background-color: var(--red);
     color: var(--blue);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    transition: transform .25s ease-out;
+}
+
+.button:hover {
+    color: var(--blue);
+}
+
+.button:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
 }
 
 .button_center {
@@ -256,7 +272,24 @@ a::-moz-selection {
     border: 2px solid var(--blue);
 }
 
-.button_blue:hover {
+.button_blue::before {
     background-color: var(--blue);
+}
+
+.button_blue:hover {
     color: var(--red);
+}
+
+@media (min-width:680px) {
+    header {
+        padding: 0 80px;
+    }
+
+    section {
+        padding: 60px 80px;
+    }
+
+    .text-width-66 {
+        width: 66%;
+    }
 }
