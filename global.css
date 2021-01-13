@@ -32,60 +32,6 @@ body {
     background-color: var(--blue);
 }
 
-header {
-    padding: 0 20px;
-    max-width: 1300px;
-}
-
-header nav a {
-    text-decoration: none;
-    line-height: 1;
-
-    font-family: effra, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    float: right;
-
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px 15px 18px 15px;
-
-    position: relative;
-    z-index: 0;
-    display: inline-block;
-    overflow: hidden;
-    color: var(--sand);
-    vertical-align: bottom;
-    transition: color .3s ease-out;
-}
-
-header nav a::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    width: 100%;
-    height: 100%;
-    background-color: var(--red);
-    transition: transform .25s ease-out;
-}
-
-header nav a:hover {
-    color: var(--blue);
-    text-decoration: none;
-}
-
-header nav a:hover::before {
-    transform: translateY(0);
-    transition: transform .25s ease-out;
-}
-
-header nav .nav_active {
-    text-decoration: underline;
-}
-
 section {
     padding: 40px 20px;
 }
@@ -280,9 +226,147 @@ a::-moz-selection {
     color: var(--red);
 }
 
+/*--HEADER--*/
+
+header {
+    position: absolute;
+    z-index: 2;
+}
+
+header .hidden {
+    display: none;
+    transform: scale(0);
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+header #menu {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 100px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    background-color: var(--blue);
+}
+
+header .row {
+    display: block;
+    top: 0;
+    width: 100vw;
+    padding: 0 20px;
+}
+
+.header_fixed {
+    position: fixed;
+}
+
+header .nav_menu {
+    justify-content: right;
+    display: flex;
+}
+
+header #menuknap {
+    font-size: 3em;
+    margin: auto 0 auto 12px;
+    max-height: 70px;
+    text-align: right;
+    color: var(--red);
+    cursor: pointer;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    line-height: 2;
+    font-family: effra, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.menu_links {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 @media (min-width:680px) {
     header {
         padding: 0 80px;
+        max-width: 1300px;
+        position: static;
+    }
+
+    .menu_links {
+        display: block;
+        flex-direction: column;
+    }
+
+    header #menu {
+        padding-top: 0;
+        position: static;
+        top: 0;
+        height: 100%;
+        background-color: none;
+    }
+
+    header .hidden {
+        display: block;
+        transform: scale(none);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    header .row {
+        display: none;
+        transform: scale(0);
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    header nav a {
+        line-height: 1;
+        float: right;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px 15px 18px 15px;
+
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        overflow: hidden;
+        color: var(--sand);
+        vertical-align: bottom;
+        transition: color .3s ease-out;
+    }
+
+    header nav a::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 100%;
+        background-color: var(--red);
+        transition: transform .25s ease-out;
+    }
+
+    header nav a:hover {
+        color: var(--blue);
+        text-decoration: none;
+    }
+
+    header nav a:hover::before {
+        transform: translateY(0);
+        transition: transform .25s ease-out;
+    }
+
+    header nav .nav_active {
+        text-decoration: underline;
     }
 
     section {
@@ -292,4 +376,6 @@ a::-moz-selection {
     .text-width-66 {
         width: 66%;
     }
+
+
 }
