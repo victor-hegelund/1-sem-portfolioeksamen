@@ -41,16 +41,19 @@ h2 {
     grid-row-gap: 20px;
 }
 
-#second_section img {
-    object-fit: cover;
-    object-position: center center;
-}
-
 #third_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 20px;
+}
+
+.overlay_photo_1 {
+    background-image: url(img/portfolie_top_1.png)
+}
+
+.overlay_photo_2 {
+    background-image: url(img/jka_top_2.png)
 }
 
 @media (min-width:680px) {

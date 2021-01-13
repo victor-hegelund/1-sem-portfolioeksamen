@@ -13,10 +13,35 @@
     margin-top: 10px;
 }
 
+.overlay_photo_1 {
+    background-image: url(img/portfolie_top_1.png)
+}
+
+.overlay_photo_2 {
+    background-image: url(img/jka_top_2.png)
+}
+
+.overlay_photo_3 {
+    background-image: url(img/multiform_charlotte_brix.png)
+}
+
+.overlay_photo_4 {
+    background-image: url(img/muldvarpespil_billede.png)
+}
+
+.overlay_photo_5 {
+    background-image: url(img/ux_forside.png)
+}
+
+.overlay_photo_6 {
+    background-image: url(img/responsive_top_1.png)
+}
+
 @media (min-width:680px) {
     #second_section .content {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
     }
+
 }
